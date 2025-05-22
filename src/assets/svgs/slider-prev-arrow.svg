@@ -1,0 +1,40 @@
+<svg
+        width="125"
+        height="58"
+        viewBox="0 0 125 58"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="-1.5"
+          y="1.5"
+          width="122"
+          height="53.5"
+          rx="26.75"
+          transform="matrix(-1 0 0 1 122 0.743164)"
+          fill="white"
+        />
+        <rect
+          x="-1.5"
+          y="1.5"
+          width="122"
+          height="53.5"
+          rx="26.75"
+          transform="matrix(-1 0 0 1 122 0.743164)"
+          stroke="#384B40"
+          stroke-width="3"
+        />
+        <line
+          y1="-1.31818"
+          x2="90"
+          y2="-1.31818"
+          transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 125 30.8545)"
+          stroke="#384B40"
+          stroke-width="2.63636"
+        />
+        <path
+          d="M42.1367 21.7432L32.9094 29.6523L42.1367 36.2432"
+          stroke="#384B40"
+          stroke-width="2.63636"
+        />
+      </svg>

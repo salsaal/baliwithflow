@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-primary: #384b40;
+  --color-secondary: #fff3e5;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: url("https://cdn.jsdelivr.net/gh/marcologous/Open-Sauce-Fonts@latest/fonts/TTF/OpenSauceSans-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: url("https://cdn.jsdelivr.net/gh/marcologous/Open-Sauce-Fonts@latest/fonts/TTF/OpenSauceSans-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  background: #fff;
+  color: #000;
+  font-family: "Open Sauce Sans", sans-serif;
+}
+
+.slick-slider {
+  position: relative;
+}
+.experience .slick-arrow {
+  position: absolute !important;
+  top: -85px !important;
+}
+.experience .slick-arrow.slick-prev {
+  right: 60px !important;
+  left: auto !important;
+}
+.experience .slick-arrow.slick-next {
+  right: 10px !important;
+}
+@media (max-width: 680px) {
+  .experience .slick-arrow.slick-prev {
+    right: 50px !important;
+  }
+  .experience .slick-arrow {
+    top: -80px !important;
   }
 }
+.youMayLike .slick-dots {
+  bottom: 5px !important;
+}
+.youMayLike .slick-dots li {
+  margin: 0 !important;
+}
+.youMayLike .slick-dots li button:before {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 10px;
+}
+.youMayLike .slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #fff !important;
+  font-size: 10px;
+}
+.youMayLike .slick-arrow {
+  position: absolute !important;
+  top: auto !important;
+  bottom: -80px !important;
+}
+.youMayLike .slick-arrow.slick-prev {
+  left: 42%;
+}
+.youMayLike .slick-arrow.slick-next {
+  right: 45%;
+}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 1280px) {
+  .youMayLike .slick-arrow.slick-prev {
+    left: 35%;
+  }
+}
+@media (max-width: 860px) {
+  .youMayLike .slick-arrow.slick-prev {
+    left: 30%;
+  }
+}
+@media (max-width: 630px) {
+  .youMayLike .slick-arrow.slick-prev {
+    left: 25%;
+  }
+}
+@media (max-width: 540px) {
+  .youMayLike .slick-arrow.slick-prev {
+    left: 20%;
+  }
+  .youMayLike .slick-arrow.slick-next {
+    right: 40%;
+  }
 }
